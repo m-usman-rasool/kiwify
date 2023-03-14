@@ -1,5 +1,6 @@
 import React from "react";
 import logo from './logo.png';
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -11,9 +12,9 @@ const Header = () => {
                         Criar nova conta
                     </h2>
                     <p className="mt-2 text-center text-base leading-5 text-gray-600">
-                        Ou <a href="signin" className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                        Ou <Link to="signin" className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
                             entrar na sua conta existente
-                          </a>
+                          </Link>
                     </p>
                 </div>
             </div>
