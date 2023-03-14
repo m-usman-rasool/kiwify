@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const Signup = () => {
-    return (
+    return (<div>
+        <p className="mt-2 text-center text-base leading-5 text-gray-600">
+            Ou <Link to="signin" className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150"> entrar na sua conta existente</Link>
+        </p>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <div>
@@ -49,6 +53,7 @@ const Signup = () => {
                 </span>
             </div>
         </div>
+    </div>
     </div>
     );
 };

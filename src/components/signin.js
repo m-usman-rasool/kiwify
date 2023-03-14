@@ -1,8 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 
 const Signin = () => {
     return (
+        <div>
+            <p className="mt-2 text-center text-base leading-5 text-gray-600">
+            Ou <Link to="/" className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150"> fazer cadastro</Link>
+        </p>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
                         <form className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
                             <div>
@@ -36,6 +42,7 @@ const Signin = () => {
                                 </span>
                             </div>
                         </form>
+                    </div>
                     </div>
     );
 };
